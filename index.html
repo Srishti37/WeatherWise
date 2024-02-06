@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header"><img id="logo" src="media/logo.png" alt="logo"> </div>
+    <div class="container">
+      <div class="intro"><img src="media/leftBg.gif" alt=""></div>
+      <div class="introResponsive"><img src="media/leftBg-responsive.gif" alt="">
+        <h2>Discover the weather in</h2> 
+        <h2>every city you go.</h2>
+      </div>
+
+      <div class="cardContainer">
+        <div class="card">
+          <div class="searchBox">
+            <input
+              id="input"
+              type="text"
+              placeholder="Enter city name"
+              spellcheck="false"
+            />
+            <button type="submit" id="search"></button>
+          </div>
+  
+          <div class="error">Invalid City!!!</div>
+          <div class="loader">
+            <img src="media/loader.gif" />
+            <h6>Loading City!!!</h6>
+          </div>
+  
+          <div class="weatherBox">
+            <img id="tempImg" src="media/clear.png" />
+            <h2 id="temp">22°C</h2>
+            <h2 id="city">Mumbai</h2>
+            <p id="weatherName">Clouds</p>
+  
+            <div class="details">
+              <div class="col">
+                <img src="media/humidity.png" />
+                <div>
+                  <p id="humidity">55</p>
+                  <p>Humidity</p>
+                </div>
+              </div>
+              <div class="col">
+                <img src="media/wind.png" />
+                <div>
+                  <p id="wind">55</p>
+                  <p>Wind</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
